@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    background-color:#18131c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo-imagem {
+    width: auto;
+    max-height: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu li {
+    display: inline-block;
+    margin: 0 30px;
+}
+.menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu li a:hover{
+    color: #f7d128;
+}
+.menu li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #f7d128;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+.menu li a:hover::after {
+    color: #f7d128;
+    width: 100%;
+}
+.sociais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.insta {
+    width: auto;
+    max-height: 25px;
+    margin: 0 10px;
+}
+.tiktok {
+    width: auto;
+    max-height: 25px;
+    margin: 0 10px;
+}
+.twitter {
+    width: auto;
+    max-height: 25px;
+    margin: 0 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+main div {
+    height: 200px;
+    width: 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: filter 0.3s, transform 0.3s;
+}
+.imagem1:hover img {
+    filter: blur(1px) brightness(0.7);
+    transform: scale(1.1);
+}
+.imagem2:hover img {
+    filter: blur(1px) brightness(0.7);
+    transform: scale(1.1);
+}
+.imagem3:hover img {
+    filter: blur(1px) brightness(0.7);
+    transform: scale(1.1);
+}
+.imagem4:hover img {
+    filter: blur(1px) brightness(0.7);
+    transform: scale(1.1);
+}
+.body {
+    height: 450px;
+    width: 100%;
+    background-color: #18131c;
+    background-image: url(IMAGENS/fundosynthwave.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    color: #f7d128;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px;
+    font-style: italic;
+}
+h3 {
+    color: #f7d128;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.botoes {
+    display: flex;
+}
+.botao {
+    flex: 1;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56vh;
+}
+.video-container video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
