@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fundo {
+    width: 100%;
+    position: relative;
+}
+.fundo img {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    position: absolute;
+    top: 10vh;
+    left: 125vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f7d128;
+}
+p {
+    position: absolute;
+    top: 17vh;
+    left: 125vh;
+    right: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+h3 {
+    position: absolute;
+    top: 50vh;
+    left: 125vh;
+    right: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3 a {
+    color: white;
+}
+h3 a:hover {
+    color: #f7d128;
+}

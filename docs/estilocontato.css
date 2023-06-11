@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    background-color:#18131c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo-imagem {
+    width: auto;
+    max-height: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu li {
+    display: inline-block;
+    margin: 0 30px;
+}
+.menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu li a:hover{
+    color: #f7d128;
+}
+.menu li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #f7d128;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+.menu li a:hover::after {
+    color: #f7d128;
+    width: 100%;
+}
+.sociais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.insta {
+    width: auto;
+    max-height: 25px;
+    margin: 0 10px;
+}
+.tiktok {
+    width: auto;
+    max-height: 25px;
+    margin: 0 10px;
+}
+.twitter {
+    width: auto;
+    max-height: 25px;
+    margin: 0 10px;
+}
+body {
+    background-image: url(IMAGENS/contato.jpg);
+    background-size: cover;
+}
+h2 {
+    text-align: left;
+    color: #f7d128;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+p {
+    text-align: left;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.caixa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -35%);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset {
+    border: none;
+    padding: 15px;
+}
+.inputs {
+    position: relative;
+}
+.formu {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #f7d128;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+.labelformu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.formu:focus ~ .labelformu,
+.formu:valid ~ .labelformu {
+    top: -20px;
+    font-size: 12px;
+    color: #f7d128;
+}
+.msg {
+    background-color: rgba(132, 0, 255, 0.2);
+    border: 1px solid #f7d128;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 200px;
+}
+.msg:focus ~ .labelformu,
+.msg:valid ~ .labelformu {
+    top: -20px;
+    font-size: 12px;
+    color: #f7d128;
+}
+#enviar {
+    background-image: linear-gradient(to right,#3d0099, #6a0080);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#enviar:hover {
+    background-image: linear-gradient(to right,#2d0070, #4c005c);
+}
